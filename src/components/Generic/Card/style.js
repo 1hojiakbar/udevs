@@ -18,18 +18,23 @@ const getType = ({ type }) => {
 
 export const CardWrapper = styled.div`
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
   align-items: flex-start;
-  height: 100px;
-  width: 120px;
-  row-gap: 12px;
-  padding: 10px 20px 10px 10px;
+  justify-content: space-between;
+  width: ${({ w }) => (w ? w : "120px")};
+  height: ${({ h }) => (h ? h : "100px")};
+  row-gap: ${({ xg }) => (xg ? xg : "12px")};
+  border-radius: 8px;
+  padding-top: ${({ pt }) => (pt ? pt : "10px")};
+  padding-right: ${({ pr }) => (pr ? pr : "20px")};
+  padding-bottom: ${({ pb }) => (pb ? pb : "10px")};
+  padding-left: ${({ pl }) => (pl ? pl : "10px")};
   ${getType}
 `;
 
 export const CardIcon = styled.img`
-  width: 56px;
-  height: 56px;
+  width: ${({ w }) => (w ? w : "56px")};
+  height: ${({ h }) => (h ? h : "56px")};
   background: transparent;
 `;
 

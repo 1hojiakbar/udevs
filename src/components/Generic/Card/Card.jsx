@@ -1,13 +1,12 @@
-import React from "react";
 import { CardIcon, CardTitle, CardWrapper } from "./style";
 
-const Card = ({ t, icon, title }) => {
+const GenericCard = ({ t, icon, iconSize, title, ...prop }) => {
   return (
-    <CardWrapper type={t}>
-      {icon && <CardIcon src={icon} />}
+    <CardWrapper type={t} {...prop}>
+      {icon && <CardIcon src={icon} w={iconSize} h={iconSize} />}
       {title && <CardTitle>{title}</CardTitle>}
     </CardWrapper>
   );
 };
 
-export default Card;
+export default GenericCard;

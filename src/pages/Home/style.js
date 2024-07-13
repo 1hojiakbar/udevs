@@ -8,7 +8,7 @@ export const Container = styled.div`
   height: 100vh;
   min-height: 100vh;
   overflow-y: scroll;
-  border: 2px solid rebeccapurple;
+  margin-bottom: 110px;
   background: var(--light);
 `;
 

@@ -6,6 +6,13 @@
   box-sizing: border-box;
 }
 
+:root {
+  --light: #ffffff;
+  --primary: #1b5bf7;
+  --dark: #18191f;
+  --font: "Manrope", sans-serif;
+}
+
 body {
   background: #ffffff;
   font-family: "Manrope", sans-serif;

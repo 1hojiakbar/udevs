@@ -38,7 +38,7 @@ const Navbar = () => {
                   defaultValue={label}
                   options={children}
                   style={{
-                    width: "max-conent",
+                    width: 110,
                   }}
                 />
               );

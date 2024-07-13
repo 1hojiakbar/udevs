@@ -25,31 +25,31 @@ const navbar = [
     children: [
       {
         id: "1-1",
-        label: "1st menu item",
+        label: "Development of mobile applications",
         path: "/mobile",
         className: "custom-dropdown-menu-item",
       },
       {
         id: "1-2",
-        label: "2nd menu item",
+        label: "Development and implementation ERP systems",
         path: "/system",
         className: "custom-dropdown-menu-item",
       },
       {
         id: "1-3",
-        label: "3rd menu item",
+        label: "User interface, User experience design",
         path: "/interface",
         className: "custom-dropdown-menu-item",
       },
       {
         id: "1-4",
-        label: "4th menu item",
+        label: "IT consulting",
         path: "/consulting",
         className: "custom-dropdown-menu-item",
       },
       {
         id: "1-5",
-        label: "5th menu item",
+        label: "Optimization IT consulting infrastructure",
         path: "/optimization",
         className: "custom-dropdown-menu-item",
       },

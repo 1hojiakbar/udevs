@@ -10,7 +10,10 @@
   --light: #ffffff;
   --primary: #1b5bf7;
   --dark: #18191f;
+  --bgCard: #f4f7ff;
   --font: "Manrope", sans-serif;
+  --black: #000000;
+  --secondary: #464359;
 }
 
 body {

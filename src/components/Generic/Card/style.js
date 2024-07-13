@@ -20,15 +20,17 @@ export const CardWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-between;
-  width: ${({ w }) => (w ? w : "120px")};
-  height: ${({ h }) => (h ? h : "100px")};
+  justify-content: ${({ center }) => (center ? center : "space-between")};
+  justify-content: center;
+  width: ${({ w }) => (w ? w : "145px")};
+  height: ${({ h }) => (h ? h : "120px")};
   row-gap: ${({ xg }) => (xg ? xg : "12px")};
   border-radius: 8px;
   padding-top: ${({ pt }) => (pt ? pt : "10px")};
   padding-right: ${({ pr }) => (pr ? pr : "20px")};
   padding-bottom: ${({ pb }) => (pb ? pb : "10px")};
   padding-left: ${({ pl }) => (pl ? pl : "10px")};
+  /* border: 1px solid red; */
   ${getType}
 `;
 

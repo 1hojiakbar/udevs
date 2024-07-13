@@ -1,13 +1,17 @@
 import Card from "../Card/Card";
 import { Flex, Image } from "antd";
 import {
+  BackgroundCover,
   CardWrapper,
   Container,
   ContentWrapper,
   GenericText,
   GenericTitle,
+  RightImage,
+  RightImageWrapper,
   SubCardSection,
   SubCardTitle,
+  SubCardWrapper,
 } from "./style";
 
 const Section = ({
@@ -19,6 +23,7 @@ const Section = ({
   card,
   subCard,
   subCardTitle,
+  bgImage,
 }) => {
   return (
     <Container>
@@ -28,26 +33,34 @@ const Section = ({
           <GenericText>{text}</GenericText>
           <CardWrapper>
             {card?.map((item) => {
-              const { cardType, cardIcon, cardTitle } = item;
-              return <Card t={cardType} title={cardTitle} icon={cardIcon} />;
+              const { id, cardType, cardIcon, title } = item;
+              return (
+                <Card key={id} t={cardType} title={title} icon={cardIcon} />
+              );
             })}
           </CardWrapper>
           <SubCardSection>
             <SubCardTitle>{subCardTitle}</SubCardTitle>
-            {subCard?.map((item) => {
-              const { cardIcon, cardTitle } = item;
-              return <Card title={cardTitle} icon={cardIcon} />;
-            })}
+            <SubCardWrapper>
+              {subCard?.map((item) => {
+                const { id, cardIcon, title } = item;
+                return (
+                  <Card
+                    key={id}
+                    title={title}
+                    icon={cardIcon}
+                    center="center"
+                  />
+                );
+              })}
+            </SubCardWrapper>
           </SubCardSection>
         </Flex>
-        <Flex>
-          <Image
-            src={imgSrc}
-            width={imgWidth}
-            height={imgHeight}
-            preview={false}
-          />
-        </Flex>
+        <RightImageWrapper>
+          <BackgroundCover>
+            <RightImage src={imgSrc} />
+          </BackgroundCover>
+        </RightImageWrapper>
       </ContentWrapper>
     </Container>
   );

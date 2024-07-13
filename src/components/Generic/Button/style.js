@@ -63,8 +63,6 @@ export const GenericButton = styled(Button)`
   font-family: var(--mulish);
   ${getSize}
   text-align: center;
-  transform: perspective(800px);
-  transition: all 0.2s ease-in-out;
   row-gap: ${({ ygap }) => ygap && ygap};
   column-gap: ${({ xgap }) => xgap && xgap};
   width: ${({ w }) => (w ? w : "100%")};
@@ -79,6 +77,10 @@ export const GenericButton = styled(Button)`
   padding-right: ${({ pr }) => (pr ? pr : "0")};
   padding-bottom: ${({ pb }) => (pb ? pb : "0")};
   padding-left: ${({ pl }) => (pl ? pl : "0")};
+  &:hover {
+    transform: scale(1.07);
+    transition: all 0.2s ease-in-out;
+  }
   ${getType}
   &:hover {
     ${getType}

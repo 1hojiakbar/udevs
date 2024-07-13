@@ -1,4 +1,5 @@
-import React, { useEffect, useRef } from "react";
+import Typed from "typed.js";
+import { useEffect, useRef } from "react";
 import logo from "../../assets/icons/logo.svg";
 import Button from "../../components/Generic/Button/Button";
 import homeImage from "../../assets/images/home-section.svg";
@@ -12,8 +13,6 @@ import {
   RightContent,
   SubTitle,
 } from "./style";
-import Typed from "typed.js";
-import Services from "../Services/Services";
 
 const Home = () => {
   const typedTextRef = useRef(null);
@@ -39,24 +38,21 @@ const Home = () => {
   }, []);
 
   return (
-    <>
-      <Container>
-        <ContentWrapper>
-          <LeftContent>
-            <LogoImage src={logo} alt="Logo not found" />
-            <HomeTitle>IT-Outsourcing Company</HomeTitle>
-            <SubTitle ref={typedTextRef}></SubTitle>
-            <Button type="primary" minw="248px" maxw="120px" w="248px" h="56px">
-              Contact
-            </Button>
-          </LeftContent>
-          <RightContent>
-            <LeftImage src={homeImage} alt="Image not found" />
-          </RightContent>
-        </ContentWrapper>
-      </Container>
-      <Services />
-    </>
+    <Container>
+      <ContentWrapper>
+        <LeftContent>
+          <LogoImage src={logo} alt="Logo not found" />
+          <HomeTitle>IT-Outsourcing Company</HomeTitle>
+          <SubTitle ref={typedTextRef}></SubTitle>
+          <Button type="primary" minw="248px" maxw="120px" w="248px" h="56px">
+            Contact
+          </Button>
+        </LeftContent>
+        <RightContent>
+          <LeftImage src={homeImage} alt="Image not found" />
+        </RightContent>
+      </ContentWrapper>
+    </Container>
   );
 };
 

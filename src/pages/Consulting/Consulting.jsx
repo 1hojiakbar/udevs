@@ -1,4 +1,4 @@
-import Section from "../../components/Generic/Left/Section";
+import Section from "../../components/Generic/LeftNoBg/Section";
 import consultingImage from "../../assets/images/it-consulting-section.svg";
 import consultingCardData, { consultingPageText } from "../../utils/consulting";
 

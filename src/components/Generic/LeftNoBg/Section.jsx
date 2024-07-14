@@ -60,9 +60,7 @@ const Section = ({
             </SubCardSection>
           </div>
           <LeftImageWrapper>
-            <BackgroundCover>
-              <LeftImage src={imgSrc} />
-            </BackgroundCover>
+            <LeftImage src={imgSrc} />
           </LeftImageWrapper>
         </BoxWrapper>
       </ContentWrapper>

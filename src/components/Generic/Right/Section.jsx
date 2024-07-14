@@ -10,15 +10,14 @@ import {
   RightContent,
 } from "./style";
 
-const Section = ({ title, text, imgSrc, card, bgImage }) => {
-  console.log(bgImage);
+const Section = ({ title, text, imgSrc, card }) => {
   return (
     <Container>
       <ContentWrapper>
         <GenericTitle>{title}</GenericTitle>
         <BoxWrapper>
           <LeftImageWrapper>
-            <BackgroundCover bool={bgImage && bgImage}>
+            <BackgroundCover>
               <LeftImage src={imgSrc} />
             </BackgroundCover>
           </LeftImageWrapper>

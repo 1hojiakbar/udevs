@@ -1,4 +1,3 @@
-import React from "react";
 import Home from "../pages/Home/Home";
 import Services from "../pages/Services/Services";
 import Team from "../pages/Team/Team";
@@ -7,6 +6,7 @@ import Systems from "../pages/ERPSystems/Systems";
 import UI from "../pages/UI/UI";
 import Optimization from "../pages/Optimization/Optimization";
 import Consulting from "../pages/Consulting/Consulting";
+import Tools from "../pages/Tools/Tools";
 
 const App = () => {
   return (
@@ -19,6 +19,7 @@ const App = () => {
       <UI />
       <Optimization />
       <Consulting />
+      <Tools />
     </>
   );
 };

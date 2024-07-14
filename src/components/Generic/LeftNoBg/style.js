@@ -1,6 +1,5 @@
-import { Flex } from "antd";
 import styled from "styled-components";
-import backgroundImage from "../../../assets/images/bg-of-image.png";
+import { Flex } from "antd";
 
 const getSize = ({ type }) => {
   switch (type) {
@@ -36,7 +35,7 @@ export const Container = styled.div`
   width: 100%;
   padding: 120px 0;
   height: max-content;
-  background: var(--bgCard);
+  border: 1px solid blue;
 `;
 
 export const CardWrapper = styled.div`
@@ -62,6 +61,7 @@ export const GenericText = styled.p`
   ${getSize}
   width: ${({ w }) => (w ? w : "100%")};
   color: var(--dark);
+  //
 `;
 
 export const SubCardSection = styled(Flex)`
@@ -84,21 +84,6 @@ export const SubCardWrapper = styled.div`
   width: 100%;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 15px;
-`;
-
-export const BackgroundCover = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-  width: 500px;
-  height: 563px;
-  border-radius: 10px;
-  overflow: hidden;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-image: url(${backgroundImage});
 `;
 
 export const RightImage = styled.img``;

@@ -3,18 +3,6 @@ const { Text } = Typography;
 import { Space, Flex, Typography } from "antd";
 import backgroundImage from "../../../assets/images/bg-of-image.png";
 
-const getBgImage = ({ bool }) => {
-  if (bool === "true") {
-    return {
-      backgroun: `url(${backgroundImage})`,
-    };
-  } else {
-    return {
-      backgroun: "transparent",
-    };
-  }
-};
-
 export const Container = styled.div`
   display: flex;
   width: 100%;
@@ -35,7 +23,6 @@ export const BoxWrapper = styled.div`
   justify-content: space-between;
   width: 100%;
   gap: 45px;
-  border: 2px solid teal;
 `;
 
 export const LeftImageWrapper = styled.div`
@@ -55,7 +42,7 @@ export const BackgroundCover = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  ${getBgImage}
+  background-image: url(${backgroundImage});
 `;
 
 export const LeftImage = styled.img`

@@ -24,7 +24,9 @@ const Section = ({
   subCard,
   subCardTitle,
   textWidth,
+  bgImage,
 }) => {
+  console.log(bgImage);
   return (
     <Container>
       <ContentWrapper>
@@ -33,7 +35,6 @@ const Section = ({
           <div
             style={{
               display: "flex",
-              border: "1px solid red",
               flexDirection: "column",
               height: "max-content",
               alignContent: "flex-start",
@@ -53,14 +54,15 @@ const Section = ({
             <SubCardSection>
               <SubCardTitle>{subCardTitle}</SubCardTitle>
               <SubCardWrapper>
-                {subCard.map(({ id, cardIcon, title }) => {
-                  return <Card key={id} icon={cardIcon} title={title} />;
-                })}
+                {subCard &&
+                  subCard.map(({ id, cardIcon, title }) => {
+                    return <Card key={id} icon={cardIcon} title={title} />;
+                  })}
               </SubCardWrapper>
             </SubCardSection>
           </div>
           <LeftImageWrapper>
-            <BackgroundCover>
+            <BackgroundCover bool={bgImage}>
               <LeftImage src={imgSrc} />
             </BackgroundCover>
           </LeftImageWrapper>

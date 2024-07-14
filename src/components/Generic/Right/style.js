@@ -3,6 +3,18 @@ const { Text } = Typography;
 import { Space, Flex, Typography } from "antd";
 import backgroundImage from "../../../assets/images/bg-of-image.png";
 
+const getBgImage = ({ bool }) => {
+  if (bool === "true") {
+    return {
+      backgroun: `url(${backgroundImage})`,
+    };
+  } else {
+    return {
+      backgroun: "transparent",
+    };
+  }
+};
+
 export const Container = styled.div`
   display: flex;
   width: 100%;
@@ -43,7 +55,7 @@ export const BackgroundCover = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-image: url(${backgroundImage});
+  ${getBgImage}
 `;
 
 export const LeftImage = styled.img`

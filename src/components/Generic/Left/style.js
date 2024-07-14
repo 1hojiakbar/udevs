@@ -30,6 +30,18 @@ const getSize = ({ type }) => {
   }
 };
 
+const getBgImage = ({ bool }) => {
+  if (bool === "true") {
+    return {
+      backgroun: `url(${backgroundImage})`,
+    };
+  } else {
+    return {
+      backgroun: "transparent",
+    };
+  }
+};
+
 export const Container = styled.div`
   display: flex;
   justify-content: center;
@@ -100,7 +112,7 @@ export const BackgroundCover = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-image: url(${backgroundImage});
+  ${getBgImage}
 `;
 
 export const RightImage = styled.img``;

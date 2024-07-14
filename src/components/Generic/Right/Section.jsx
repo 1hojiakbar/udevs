@@ -1,6 +1,5 @@
 import Card from "../Card/Card";
-import { CardWrapper, GenericText } from "../Left/style";
-import Title from "../Title/Title";
+import { CardWrapper, GenericText, GenericTitle } from "../Left/style";
 import {
   BackgroundCover,
   BoxWrapper,
@@ -11,14 +10,15 @@ import {
   RightContent,
 } from "./style";
 
-const Section = ({ title, text, imgSrc, card }) => {
+const Section = ({ title, text, imgSrc, card, bgImage }) => {
+  console.log(bgImage);
   return (
     <Container>
       <ContentWrapper>
-        <Title>{title}</Title>
+        <GenericTitle>{title}</GenericTitle>
         <BoxWrapper>
           <LeftImageWrapper>
-            <BackgroundCover>
+            <BackgroundCover bool={bgImage && bgImage}>
               <LeftImage src={imgSrc} />
             </BackgroundCover>
           </LeftImageWrapper>

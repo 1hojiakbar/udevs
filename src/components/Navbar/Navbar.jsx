@@ -26,7 +26,12 @@ const Navbar = () => {
             const { id, label, children, path, element } = item;
             if (element === "link") {
               return (
-                <NavLinkItem to={path || "/"} key={id}>
+                <NavLinkItem
+                  to={path || "/"}
+                  key={id}
+                  smooth={item.smooth}
+                  duration={item.duration}
+                >
                   {label}
                 </NavLinkItem>
               );

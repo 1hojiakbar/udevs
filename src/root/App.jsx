@@ -5,7 +5,8 @@ import Team from "../pages/Team/Team";
 import Mobile from "../pages/Mobile/Mobile";
 import Systems from "../pages/ERPSystems/Systems";
 import UI from "../pages/UI/UI";
-import Optimization from "../pages/Optimization/Systems";
+import Optimization from "../pages/Optimization/Optimization";
+import Consulting from "../pages/Consulting/Consulting";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <Systems />
       <UI />
       <Optimization />
+      <Consulting />
     </>
   );
 };

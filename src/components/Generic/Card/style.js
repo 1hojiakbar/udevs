@@ -28,7 +28,7 @@ export const CardWrapper = styled.div`
   align-items: flex-start;
   justify-content: ${({ center }) => (center ? center : "space-between")};
   justify-content: center;
-  border: 1px solid red;
+  border: 1px solid gray;
   width: ${({ w }) => (w ? w : "156px")};
   height: ${({ h }) => (h ? h : "120px")};
   gap: ${({ gap }) => (gap ? gap : "12px")};

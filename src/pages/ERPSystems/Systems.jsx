@@ -10,6 +10,7 @@ const Systems = () => {
     <>
       <Section
         title="ERP systems"
+        bgImage={Boolean(true).valueOf().toString()}
         text={erpSystemSectionText}
         card={erpSystemsCardData}
         imgSrc={erpRightImage}

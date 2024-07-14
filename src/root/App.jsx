@@ -3,6 +3,7 @@ import Home from "../pages/Home/Home";
 import Services from "../pages/Services/Services";
 import Team from "../pages/Team/Team";
 import Mobile from "../pages/Mobile/Mobile";
+import Systems from "../pages/ERPSystems/Systems";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Services />
       <Team />
       <Mobile />
+      <Systems />
     </>
   );
 };

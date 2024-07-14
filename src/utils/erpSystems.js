@@ -9,33 +9,39 @@ import warehouseIcon from "../assets/icons/warehouse.svg";
 const erpSystemsCardData = [
   {
     id: 1,
-    icon: crmIcon,
+    cardIcon: crmIcon,
     title: "CRM",
+    cardType: "dark",
   },
   {
     id: 2,
-    icon: learningIcon,
+    cardIcon: learningIcon,
     title: "eLearning",
+    cardType: "dark",
   },
   {
     id: 3,
-    icon: eCommerceIcon,
+    cardIcon: eCommerceIcon,
     title: "E-Commerce",
+    cardType: "dark",
   },
   {
     id: 4,
-    icon: posIcon,
+    cardIcon: posIcon,
     title: "POS",
+    cardType: "dark",
   },
   {
     id: 5,
-    icon: emailIcon,
+    cardIcon: emailIcon,
     title: "Sms / Email",
+    cardType: "dark",
   },
   {
     id: 6,
-    icon: warehouseIcon,
+    cardIcon: warehouseIcon,
     title: "Warehouse",
+    cardType: "dark",
   },
 ];
 

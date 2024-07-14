@@ -8,6 +8,12 @@ const getType = ({ type }) => {
         color: "var(--light)",
       };
 
+    case "dark":
+      return {
+        background: "var(--darkBgCard)",
+        color: "var(--light)",
+      };
+
     default:
       return {
         background: "var(--light)",

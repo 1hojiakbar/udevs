@@ -44,7 +44,7 @@ export const GenericTitle = styled.div`
 export const GenericText = styled(Text)`
   font-size: 24px;
   line-height: 40px;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 26px;
   width: 420px;
   color: var(--dark);

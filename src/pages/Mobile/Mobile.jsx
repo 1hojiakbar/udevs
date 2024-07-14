@@ -1,4 +1,3 @@
-import React from "react";
 import mobileCardData, {
   mobilePageText,
   mobileTechCardData,

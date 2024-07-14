@@ -1,23 +1,40 @@
-import React from "react";
-import { Container } from "./style";
-import { Flex, Image, Space } from "antd";
+import Card from "../Card/Card";
+import { CardWrapper, GenericText } from "../Left/style";
+import Title from "../Title/Title";
+import {
+  BackgroundCover,
+  BoxWrapper,
+  Container,
+  ContentWrapper,
+  LeftImage,
+  LeftImageWrapper,
+  RightContent,
+} from "./style";
 
-const Section = ({ flexd, center, imgWidth, imgHeight, imgSrc }) => {
+const Section = ({ title, text, imgSrc, card }) => {
   return (
     <Container>
-      <Space>
-        <Flex>
-            
-        </Flex>
-        <Flex>
-          <Image
-            src={imgSrc}
-            width={imgWidth}
-            height={imgHeight}
-            preview={false}
-          />
-        </Flex>
-      </Space>
+      <ContentWrapper>
+        <Title>{title}</Title>
+        <BoxWrapper>
+          <LeftImageWrapper>
+            <BackgroundCover>
+              <LeftImage src={imgSrc} />
+            </BackgroundCover>
+          </LeftImageWrapper>
+          <RightContent>
+            <GenericText>{text}</GenericText>
+            <CardWrapper>
+              {card?.map((item) => {
+                const { id, cardType, cardIcon, title } = item;
+                return (
+                  <Card key={id} t={cardType} title={title} icon={cardIcon} />
+                );
+              })}
+            </CardWrapper>
+          </RightContent>
+        </BoxWrapper>
+      </ContentWrapper>
     </Container>
   );
 };

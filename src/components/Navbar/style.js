@@ -71,7 +71,6 @@ const NavLinkItem = styled(Link)`
   align-items: center;
   flex-direction: column;
   font-size: 14px;
-  font-weight: 700;
   line-height: 20px;
   color: var(--dark);
   cursor: pointer;

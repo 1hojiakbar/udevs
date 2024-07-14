@@ -28,9 +28,10 @@ export const CardWrapper = styled.div`
   align-items: flex-start;
   justify-content: ${({ center }) => (center ? center : "space-between")};
   justify-content: center;
-  width: ${({ w }) => (w ? w : "145px")};
+  border: 1px solid red;
+  width: ${({ w }) => (w ? w : "156px")};
   height: ${({ h }) => (h ? h : "120px")};
-  row-gap: ${({ xg }) => (xg ? xg : "12px")};
+  gap: ${({ gap }) => (gap ? gap : "12px")};
   border-radius: 8px;
   padding-top: ${({ pt }) => (pt ? pt : "10px")};
   padding-right: ${({ pr }) => (pr ? pr : "20px")};

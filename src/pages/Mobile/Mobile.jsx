@@ -11,6 +11,7 @@ const Mobile = () => {
       title="Development of mobile applications"
       text={mobilePageText}
       bgImage={"true"}
+      textWidth={"450px"}
       card={mobileCardData}
       imgSrc={mobileSection}
       subCardTitle="Technologies"

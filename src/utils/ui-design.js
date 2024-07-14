@@ -35,16 +35,19 @@ const uiCardData = [
     id: 4,
     cardIcon: uiMoblieIcon,
     title: "Mobile Design",
+    cardType: "science",
   },
   {
     id: 5,
     cardIcon: uiWebDesignIcon,
     title: "Web Design",
+    cardType: "science",
   },
   {
     id: 6,
     cardIcon: uiAtomicDesignIcon,
     title: "Atomic Design",
+    cardType: "science",
   },
 ];
 

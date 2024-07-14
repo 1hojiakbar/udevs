@@ -23,12 +23,12 @@ export const BoxWrapper = styled.div`
   justify-content: space-between;
   width: 100%;
   gap: 45px;
+  border: 2px solid teal;
 `;
 
 export const LeftImageWrapper = styled.div`
   display: flex;
   justify-content: flex-start;
-  margin-top: 100px;
   width: 43%;
 `;
 

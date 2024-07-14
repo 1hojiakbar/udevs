@@ -20,7 +20,6 @@ const Services = () => {
                 pr="40px"
                 pb="25px"
                 pl="20px"
-                iconSize="35px"
                 type="science"
                 icon={card.icon}
                 title={card.title}

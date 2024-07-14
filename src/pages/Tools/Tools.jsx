@@ -4,7 +4,6 @@ import { ContentWrapper } from "../../components/Generic/Right/style";
 import { Card, Radio } from "antd";
 import toolsCardData from "../../utils/tools";
 import { ToolsCardWrapper } from "./style";
-import GenericCard from "../../components/Generic/Card/MinCard";
 const { Meta } = Card;
 
 const Tools = () => {

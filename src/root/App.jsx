@@ -7,6 +7,7 @@ import UI from "../pages/UI/UI";
 import Optimization from "../pages/Optimization/Optimization";
 import Consulting from "../pages/Consulting/Consulting";
 import Tools from "../pages/Tools/Tools";
+import Clients from "../pages/Clients/Clients";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
       <Optimization />
       <Consulting />
       <Tools />
+      <Clients />
     </>
   );
 };

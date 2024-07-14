@@ -6,7 +6,15 @@ import {
   LeftImage,
   LeftImageWrapper,
 } from "../Right/style";
-import { CardWrapper, Container, GenericText, GenericTitle } from "./style";
+import {
+  CardWrapper,
+  Container,
+  GenericText,
+  GenericTitle,
+  SubCardSection,
+  SubCardTitle,
+  SubCardWrapper,
+} from "./style";
 
 const Section = ({
   title,
@@ -15,8 +23,6 @@ const Section = ({
   card,
   subCard,
   subCardTitle,
-  bgImage,
-  cardWidth,
   textWidth,
 }) => {
   return (
@@ -29,7 +35,7 @@ const Section = ({
               display: "flex",
               border: "1px solid red",
               flexDirection: "column",
-              height: "500px",
+              height: "max-content",
               alignContent: "flex-start",
             }}
           >
@@ -44,7 +50,14 @@ const Section = ({
                 );
               })}
             </CardWrapper>
-            <div></div>
+            <SubCardSection>
+              <SubCardTitle>{subCardTitle}</SubCardTitle>
+              <SubCardWrapper>
+                {subCard.map(({ id, cardIcon, title }) => {
+                  return <Card key={id} icon={cardIcon} title={title} />;
+                })}
+              </SubCardWrapper>
+            </SubCardSection>
           </div>
           <LeftImageWrapper>
             <BackgroundCover>

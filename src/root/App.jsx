@@ -5,6 +5,7 @@ import Team from "../pages/Team/Team";
 import Mobile from "../pages/Mobile/Mobile";
 import Systems from "../pages/ERPSystems/Systems";
 import UI from "../pages/UI/UI";
+import Optimization from "../pages/Optimization/Systems";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <Mobile />
       <Systems />
       <UI />
+      <Optimization />
     </>
   );
 };

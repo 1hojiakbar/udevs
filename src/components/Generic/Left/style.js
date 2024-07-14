@@ -77,7 +77,7 @@ export const SubCardTitle = styled.h4`
   font-size: 32px;
   line-height: 40px;
   font-weight: 800;
-  margin-bottom: 22px;
+  margin: 26px 0 20px 0;
   color: var(--secondary);
 `;
 
@@ -85,6 +85,7 @@ export const SubCardWrapper = styled.div`
   display: grid;
   width: 100%;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 15px;
 `;
 
 export const BackgroundCover = styled.div`

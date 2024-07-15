@@ -8,6 +8,7 @@ import Optimization from "../pages/Optimization/Optimization";
 import Consulting from "../pages/Consulting/Consulting";
 import Tools from "../pages/Tools/Tools";
 import Clients from "../pages/Clients/Clients";
+import Delever from "../pages/Delever/Delever";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
       <Consulting />
       <Tools />
       <Clients />
+      <Delever />
     </>
   );
 };

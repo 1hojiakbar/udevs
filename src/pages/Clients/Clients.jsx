@@ -1,13 +1,9 @@
-import {
-  Container,
-  SlideBottom,
-  SliderContainer,
-  SlideTop,
-  TitleWrapper,
-} from "./style";
+import React from "react";
+import Marquee from "react-fast-marquee";
+import img from "../../assets/icons/my-taxi.svg";
 import { GenericTitle } from "../../components/Generic/Left/style";
 import { clientsTopData, clientsBottomData } from "../../utils/clients";
-import Slide from "./Slide";
+import { Container, Logo, SliderContainer, TitleWrapper } from "./style";
 
 const Clients = () => {
   return (
@@ -16,18 +12,26 @@ const Clients = () => {
         <GenericTitle>Our Clients</GenericTitle>
       </TitleWrapper>
       <SliderContainer>
-        <SlideTop>
+        <Marquee gradient={false} speed={40}>
           {clientsTopData.map((client) => (
-            <Slide key={client.id} icon={client.icon} />
+            <Logo
+              key={client.id}
+              src={client.icon}
+              alt={`client-${client.id}`}
+            />
           ))}
-        </SlideTop>
+        </Marquee>
       </SliderContainer>
       <SliderContainer>
-        <SlideBottom>
+        <Marquee gradient={false} speed={40} direction="right">
           {clientsBottomData.map((client) => (
-            <Slide key={client.id} icon={client.icon} />
+            <Logo
+              key={client.id}
+              src={client.icon}
+              alt={`client-${client.id}`}
+            />
           ))}
-        </SlideBottom>
+        </Marquee>
       </SliderContainer>
     </Container>
   );

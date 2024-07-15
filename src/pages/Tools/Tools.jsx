@@ -3,7 +3,7 @@ import { Container, GenericTitle } from "../../components/Generic/Left/style";
 import { ContentWrapper } from "../../components/Generic/Right/style";
 import { Card, Radio } from "antd";
 import toolsCardData from "../../utils/tools";
-import { ToolsCardWrapper } from "./style";
+import { LargeRadio, ToolsCardWrapper } from "./style";
 const { Meta } = Card;
 
 const Tools = () => {
@@ -18,13 +18,13 @@ const Tools = () => {
       <ContentWrapper>
         <GenericTitle>Tools</GenericTitle>
         <Radio.Group onChange={categoryChane} value={category}>
-          <Radio value="Frontend">Frontend</Radio>
-          <Radio value="Backend">Backend</Radio>
-          <Radio value="Devops">Devops</Radio>
-          <Radio value="Testing">Testing</Radio>
-          <Radio value="UX/UI">UX/UI</Radio>
-          <Radio value="Infrastructure">Infrastructure</Radio>
-          <Radio value="Mobile">Mobile</Radio>
+          <LargeRadio value="Frontend">Frontend</LargeRadio>
+          <LargeRadio value="Backend">Backend</LargeRadio>
+          <LargeRadio value="Devops">Devops</LargeRadio>
+          <LargeRadio value="Testing">Testing</LargeRadio>
+          <LargeRadio value="UX/UI">UX/UI</LargeRadio>
+          <LargeRadio value="Infrastructure">Infrastructure</LargeRadio>
+          <LargeRadio value="Mobile">Mobile</LargeRadio>
         </Radio.Group>
         <ToolsCardWrapper>
           {toolsCardData.map((tool) => (

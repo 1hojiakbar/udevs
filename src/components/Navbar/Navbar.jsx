@@ -11,6 +11,7 @@ import {
   Section,
   Wrapper,
 } from "./style";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const navigate = useNavigate("");
@@ -19,7 +20,9 @@ const Navbar = () => {
     <Container>
       <NavbarWrapper>
         <Section>
-          <Logo src={logo} alt="Logo not found" onClick={() => navigate("/")} />
+          <Link to="/home" smooth="true" duration={600}>
+            <Logo src={logo} alt="Logo not found" />
+          </Link>
         </Section>
         <Section gap="20px">
           {navbar.map((item) => {
@@ -57,7 +60,9 @@ const Navbar = () => {
             maxw="160px"
             type="primary"
           >
-            Contact
+            <Link to="/contact" smooth="true" duration={600}>
+              Contact
+            </Link>
           </Button>
         </Section>
       </NavbarWrapper>

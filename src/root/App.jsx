@@ -4,6 +4,7 @@ import { MoreOutlined } from "@ant-design/icons";
 import { useState } from "react";
 import { ContactInput } from "../pages/Contact/style";
 import { TitleWrapper } from "../pages/Clients/style";
+import { Element } from "react-scroll";
 
 const App = () => {
   const [open, setOpen] = useState(false);
@@ -15,9 +16,14 @@ const App = () => {
   };
   return (
     <>
-      {pages.map(({ id, element: Element }) => {
-        return <Element key={id} />;
+      {pages.map(({ id, element: Section, path }) => {
+        return (
+          <Element name={path} key={id}>
+            <Section />
+          </Element>
+        );
       })}
+
       <FloatButton
         type="primary"
         size="large"

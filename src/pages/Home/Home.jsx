@@ -13,6 +13,7 @@ import {
   RightContent,
   SubTitle,
 } from "./style";
+import { Link } from "react-scroll";
 
 const Home = () => {
   const typedTextRef = useRef(null);
@@ -44,8 +45,17 @@ const Home = () => {
           <LogoImage src={logo} alt="Logo not found" />
           <HomeTitle>IT-Outsourcing Company</HomeTitle>
           <SubTitle ref={typedTextRef}></SubTitle>
-          <Button type="primary" minw="248px" maxw="120px" w="248px" h="56px">
-            Contact
+          <Button
+            type="primary"
+            minw="248px"
+            maxw="120px"
+            w="248px"
+            h="56px"
+            minh="56px"
+          >
+            <Link to="/contact" smooth="true" duration={600}>
+              Contact
+            </Link>
           </Button>
         </LeftContent>
         <RightContent>

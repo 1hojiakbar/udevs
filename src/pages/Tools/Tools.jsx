@@ -18,13 +18,15 @@ const Tools = () => {
       <ContentWrapper>
         <GenericTitle>Tools</GenericTitle>
         <Radio.Group onChange={categoryChane} value={category}>
-          <LargeRadio value="Frontend">Frontend</LargeRadio>
-          <LargeRadio value="Backend">Backend</LargeRadio>
-          <LargeRadio value="Devops">Devops</LargeRadio>
-          <LargeRadio value="Testing">Testing</LargeRadio>
-          <LargeRadio value="UX/UI">UX/UI</LargeRadio>
-          <LargeRadio value="Infrastructure">Infrastructure</LargeRadio>
-          <LargeRadio value="Mobile">Mobile</LargeRadio>
+          <LargeRadio.Button value="Frontend">Frontend</LargeRadio.Button>
+          <LargeRadio.Button value="Backend">Backend</LargeRadio.Button>
+          <LargeRadio.Button value="Devops">Devops</LargeRadio.Button>
+          <LargeRadio.Button value="Testing">Testing</LargeRadio.Button>
+          <LargeRadio.Button value="UX/UI">UX/UI</LargeRadio.Button>
+          <LargeRadio.Button value="Infrastructure">
+            Infrastructure
+          </LargeRadio.Button>
+          <LargeRadio.Button value="Mobile">Mobile</LargeRadio.Button>
         </Radio.Group>
         <ToolsCardWrapper>
           {toolsCardData.map((tool) => (

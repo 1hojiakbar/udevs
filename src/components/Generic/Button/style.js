@@ -69,6 +69,7 @@ export const GenericButton = styled(Button)`
   min-width: ${({ minw }) => (minw ? minw : "0")};
   max-width: ${({ maxw }) => (maxw ? maxw : "0")};
   height: ${({ h }) => (h ? h : "40px")};
+  min-height: ${({ minh }) => (minh ? minh : "40px")};
   margin-top: ${({ mt }) => (mt ? mt : "0")};
   margin-right: ${({ mr }) => (mr ? mr : "0")};
   margin-bottom: ${({ mb }) => (mb ? mb : "0")};

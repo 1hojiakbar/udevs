@@ -8,7 +8,6 @@ export const Container = styled.div`
   width: 100%;
   height: 495px;
   padding: 80px 0;
-  border: 1px solid rebeccapurple;
   background: var(--bgCard);
 `;
 
@@ -44,6 +43,7 @@ export const FooterDivider = styled.div`
 export const FooterPageLink = styled(Link)`
   color: #1b5bf7;
   padding: 4px 0;
+  cursor: pointer;
   &:hover {
     text-decoration: 1px underline #1b5bf7;
   }

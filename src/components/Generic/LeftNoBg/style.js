@@ -35,7 +35,6 @@ export const Container = styled.div`
   width: 100%;
   padding: 120px 0;
   height: max-content;
-  border: 1px solid blue;
 `;
 
 export const CardWrapper = styled.div`

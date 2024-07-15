@@ -1,6 +1,4 @@
 import styled from "styled-components";
-const { Text } = Typography;
-import { Space, Flex, Typography } from "antd";
 import backgroundImage from "../../../assets/images/bg-of-image.png";
 
 export const Container = styled.div`

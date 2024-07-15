@@ -12,8 +12,8 @@ import DeleverPage from "../pages/Delever/Delever";
 import SmsuzPage from "../pages/Smsuz/Smsuz";
 import GoodzonePage from "../pages/Goodzone/Goodzone";
 import ImanPage from "../pages/Iman/Iman";
-// import Page from "../pages";
-// import Page from "../pages";
+import HowWeWorkPage from "../pages/HowWeWork/";
+import ContactPage from "../pages/Contact/Contact";
 
 const pages = [
   {
@@ -86,16 +86,16 @@ const pages = [
     element: ImanPage,
     path: "ImanPage",
   },
-  // {
-  //   id: 15,
-  //   element: "",
-  //   path: "/",
-  // },
-  // {
-  //   id: 16,
-  //   element: "",
-  //   path: "/",
-  // },
+  {
+    id: 15,
+    element: HowWeWorkPage,
+    path: "/HowWeWorkPage",
+  },
+  {
+    id: 16,
+    element: ContactPage,
+    path: "/ContactPage",
+  },
 ];
 
 export default pages;

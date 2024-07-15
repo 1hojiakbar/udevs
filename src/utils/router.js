@@ -14,6 +14,7 @@ import GoodzonePage from "../pages/Goodzone/Goodzone";
 import ImanPage from "../pages/Iman/Iman";
 import HowWeWorkPage from "../pages/HowWeWork/";
 import ContactPage from "../pages/Contact/Contact";
+import Footer from "../pages/Footer/Footer";
 
 const pages = [
   {
@@ -95,6 +96,11 @@ const pages = [
     id: 16,
     element: ContactPage,
     path: "/ContactPage",
+  },
+  {
+    id: 17,
+    element: Footer,
+    path: "/footer",
   },
 ];
 

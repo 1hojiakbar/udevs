@@ -20,9 +20,11 @@ const App = () => {
       })}
       <FloatButton
         type="primary"
+        size="large"
         onClick={() => showDrawer()}
         style={{
-          right: 44,
+          bottom: 75,
+          right: 50,
         }}
         icon={<MoreOutlined />}
       />

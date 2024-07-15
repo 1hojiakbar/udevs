@@ -14,7 +14,6 @@ export const SectionWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   width: 90%;
   margin: 0 auto;
   padding: 100px 0;
@@ -36,10 +35,14 @@ export const Address = styled.div`
 export const AddressItem = styled.div`
   display: flex;
   align-items: center;
+  gap: 12px;
 `;
 
-AddressItem.Icon = styled.img``;
-AddressItem.Title = styled.img``;
+AddressItem.Icon = styled.img`
+  width: 24px;
+  height: 24px;
+`;
+AddressItem.Title = styled.a``;
 
 export const ContactWrapper = styled.div`
   display: grid;
@@ -48,7 +51,9 @@ export const ContactWrapper = styled.div`
   width: 100%;
   margin: 0 auto;
   padding: 40px 98px 40px 98px;
-  border: 1px solid red;
+  border-radius: 10px;
+  box-shadow: 2px 10px 28px rgba(75, 0, 129, 0.12);
+  background-color: #fff;
 `;
 
 export const ContactInput = styled(Input)`

@@ -12,7 +12,7 @@ const Clients = () => {
         <GenericTitle>Our Clients</GenericTitle>
       </TitleWrapper>
       <SliderContainer>
-        <Marquee gradient={false} speed={40}>
+        <Marquee gradient={false} speed={25}>
           {clientsTopData.map((client) => (
             <Logo
               key={client.id}
@@ -23,7 +23,7 @@ const Clients = () => {
         </Marquee>
       </SliderContainer>
       <SliderContainer>
-        <Marquee gradient={false} speed={40} direction="right">
+        <Marquee gradient={false} speed={25} direction="right">
           {clientsBottomData.map((client) => (
             <Logo
               key={client.id}

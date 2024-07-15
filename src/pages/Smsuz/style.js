@@ -28,14 +28,17 @@ export const Message = styled.div`
   border-radius: 100px;
   padding: 5px 20px;
   column-gap: 8px;
-  background: rgba(255, 87, 34, 0.2);
+  background-color: rgba(68, 115, 229, 0.2);
   opacity: rgba(255, 60, 0, 0.5686274509803921);
   margin: 20px 0 40px 0;
 `;
 
-Message.Icon = styled.img``;
+Message.Icon = styled.img`
+  width: 25px;
+  height: 25px;
+`;
 Message.Title = styled.strong`
-  color: #ff5722;
+  color: #4473e5;
   font-weight: 600;
 `;
 
@@ -66,5 +69,6 @@ export const RightBoxCenterText = styled.div`
 export const CardWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  width: 80%;
   gap: 20px;
 `;

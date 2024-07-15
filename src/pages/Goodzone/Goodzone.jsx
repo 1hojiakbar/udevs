@@ -1,6 +1,6 @@
-import truckIcon from "../../assets/icons/truck.svg";
-import titleImg from "../../assets/icons/delever-title.svg";
-import image from "../../assets/images/delever-section.png";
+import titleImg from "../../assets/images/goodzone.png";
+import image from "../../assets/images/goodzone-section.png";
+import truckIcon from "../../assets/icons/goodzone-min-icon.svg";
 import { LeftImage } from "../../components/Generic/Right/style";
 import {
   CardWrapper,
@@ -16,7 +16,7 @@ import {
 import deleverCardData from "../../utils/delever";
 import GenericCard from "../../components/Generic/Card/Card";
 
-const Delever = () => {
+const Goodzone = () => {
   return (
     <Container>
       <ContentWrapper>
@@ -27,11 +27,10 @@ const Delever = () => {
           <LeftBrandLogo src={titleImg} alt="image not found" />
           <Message>
             <Message.Icon src={truckIcon} />
-            <Message.Title>Delivery</Message.Title>
+            <Message.Title>E-Commerce</Message.Title>
           </Message>
-          <RightBoxCenterText>
-            Delever - Delivery service automation targeted at both consumers and
-            restaurants.
+          <RightBoxCenterText style={{ margin: "10px 0" }}>
+            Goodzone - Internet shop of household appliances in Uzbekistan.
           </RightBoxCenterText>
           <RightBoxText>What we did?</RightBoxText>
           <CardWrapper>
@@ -51,4 +50,4 @@ const Delever = () => {
   );
 };
 
-export default Delever;
+export default Goodzone;

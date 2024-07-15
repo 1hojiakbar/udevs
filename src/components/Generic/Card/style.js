@@ -17,7 +17,7 @@ const getType = ({ type }) => {
 
     default:
       return {
-        background: "var(--light)",
+        background: "var(--bgCard)",
         color: "var(--light)",
       };
   }

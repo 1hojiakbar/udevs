@@ -28,15 +28,15 @@ export const Message = styled.div`
   border-radius: 100px;
   padding: 5px 20px;
   column-gap: 8px;
-  background: rgba(255, 87, 34, 0.2);
+  background-color: rgba(245, 0, 0, 0.2);
   opacity: rgba(255, 60, 0, 0.5686274509803921);
   margin: 20px 0 40px 0;
 `;
 
 Message.Icon = styled.img``;
 Message.Title = styled.strong`
-  color: #ff5722;
-  font-weight: 600;
+  color: #f50000;
+  font-weight: 400;
 `;
 
 export const LeftBox = styled.div`
@@ -59,7 +59,6 @@ export const RightBoxCenterText = styled.div`
   font-size: 20px;
   line-height: 40px;
   font-weight: 600;
-  margin: 10px 0;
   color: var(--secondary);
 `;
 

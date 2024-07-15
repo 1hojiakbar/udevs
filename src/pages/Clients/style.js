@@ -15,10 +15,15 @@ export const TitleWrapper = styled.div`
 
 export const SliderContainer = styled.div`
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 `;
 
 export const Logo = styled.img`
-  height: 100px;
+  width: 190px;
+  height: 130px;
   margin: 0 20px;
+  transition: all linear 150ms;
+  &:hover {
+    transform: scale(1.11);
+  }
 `;

@@ -6,7 +6,7 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 495px;
+  height: max-content;
   padding: 80px 0;
   background: var(--bgCard);
 `;

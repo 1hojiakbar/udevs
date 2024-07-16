@@ -23,6 +23,7 @@ const Container = styled.div`
 // Outlet wrapper
 const Wrapper = styled.div`
   overflow-y: scroll;
+  overflow-x: hidden;
 `;
 
 const NavbarWrapper = styled.div`

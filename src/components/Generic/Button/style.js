@@ -9,6 +9,14 @@ const getType = ({ type }) => {
         color: "var(--light)",
       };
 
+    case "nav-large":
+      return {
+        width: "90%",
+        height: "60px",
+        background: "var(--primary)",
+        color: "var(--light)",
+      };
+
     default:
       return {
         background: "var(--primary)",
@@ -87,3 +95,14 @@ export const GenericButton = styled(Button)`
     ${getType}
   }
 `;
+
+const GenericLargeButton = styled(Button)`
+  min-height: ${({ minh }) => (minh ? minh : "40px")};
+  margin: 0 auto;
+  ${getType}
+  &:hover {
+    ${getType}
+  }
+`;
+
+export default GenericLargeButton;

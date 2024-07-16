@@ -37,6 +37,9 @@ const NavbarWrapper = styled.div`
   height: 72px;
   box-shadow: 0 1px 0 #e5e9f2;
   background-color: #fff;
+  @media (max-width: 1120px) {
+    padding: 0 40px;
+  }
 `;
 
 const Logo = styled.img`
@@ -64,8 +67,54 @@ const Section = styled.div`
   ${flex}
   align-items: center;
   gap: ${({ gap }) => gap && gap};
-  .option {
-    width: 270px;
+  @media (max-width: 1020px) {
+    display: ${({ nav }) => nav === "true" && "none"};
+  }
+`;
+
+export const ThirdSection = styled.div`
+  display: ${({ none }) => none === "true" && "none"};
+  @media (max-width: 1020px) {
+    display: ${({ nav }) => nav === "true" && "none"};
+    display: block;
+  }
+`;
+
+export const MenuIcon = styled.img`
+  width: 40px;
+  height: 33px;
+  cursor: pointer;
+  display: none;
+  @media (max-width: 1020px) {
+    display: block;
+  }
+`;
+
+export const CloseIcon = styled.img`
+  width: 40px;
+  height: 33px;
+  cursor: pointer;
+`;
+
+export const DrawerContentWrapper = styled.div`
+  ${flex}
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  margin: 40px 0;
+`;
+
+export const DrawerContentLink = styled(Link)`
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 40px;
+  color: var(--black);
+  margin: 0 auto;
+  font-family: var(--font);
+  &:hover {
+    color: var(--black);
   }
 `;
 

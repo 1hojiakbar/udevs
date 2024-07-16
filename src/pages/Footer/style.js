@@ -61,7 +61,7 @@ export const BottomContentWrapper = styled.div`
   display: flex;
   align-items: center;
   color: #1b5bf7;
-  gap: 3px;
+  gap: ${({ gap }) => (gap ? gap : "3px")};
   font-size: 14px;
 `;
 

@@ -123,3 +123,12 @@ const navbar = [
 ];
 
 export default navbar;
+
+const minContent = [
+  { id: 1, path: "/mobile", type: "link", title: "Services" },
+  { id: 2, path: "/clients", type: "link", title: "Clients" },
+  { id: 3, path: "/command", type: "link", title: "Command" },
+  { id: 4, path: "/contact", type: "button", title: "Contact" },
+];
+
+export { minContent };

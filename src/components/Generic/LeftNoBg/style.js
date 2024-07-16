@@ -52,6 +52,10 @@ export const GenericTitle = styled.div`
   font-weight: 800;
   margin-bottom: 44px;
   color: var(--primary);
+  @media (max-width: 900px) {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
 `;
 
 export const GenericText = styled.p`
@@ -60,7 +64,9 @@ export const GenericText = styled.p`
   ${getSize}
   width: ${({ w }) => (w ? w : "100%")};
   color: var(--dark);
-  //
+  @media (max-width: 900px) {
+    font-size: 16px;
+  }
 `;
 
 export const SubCardSection = styled(Flex)`

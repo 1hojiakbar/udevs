@@ -9,13 +9,25 @@ import {
   SectionWrapper,
   TeamText,
 } from "./style";
+import { useMediaQuery } from "@mui/material";
 
 const Team = () => {
+  const small = useMediaQuery("(max-width: 900px)");
   return (
     <Container>
       <SectionWrapper>
         <LeftContent>
           <Title mb="42px">Team</Title>
+          {small && (
+            <RightContent>
+              <RightImage
+                src={teamImage}
+                width="100%"
+                preview={false}
+                alt="Image not found"
+              />
+            </RightContent>
+          )}
           <TeamText>
             For each project, we form a team that includes a project manager,
             business analyst, UI / UX designer, DevOps, QA engineer, backend and
@@ -23,14 +35,16 @@ const Team = () => {
           </TeamText>
           <Count />
         </LeftContent>
-        <RightContent>
-          <RightImage
-            src={teamImage}
-            width="100%"
-            preview={false}
-            alt="Image not found"
-          />
-        </RightContent>
+        {!small && (
+          <RightContent>
+            <RightImage
+              src={teamImage}
+              width="100%"
+              preview={false}
+              alt="Image not found"
+            />
+          </RightContent>
+        )}
       </SectionWrapper>
     </Container>
   );

@@ -20,7 +20,6 @@ import LargeButton from "../Generic/Button/LargeButton";
 
 const NavbarDrawer = () => {
   const { toggle, toggleValue } = useContext(ToggleContext);
-  console.log(toggle);
 
   return (
     <>

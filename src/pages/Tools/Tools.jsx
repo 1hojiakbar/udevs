@@ -39,6 +39,7 @@ const Tools = () => {
                 alignItems: "center",
                 flexDirection: "column",
                 width: 120,
+                height: 120,
               }}
               cover={
                 <img

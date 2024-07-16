@@ -28,7 +28,7 @@ export const CardWrapper = styled.div`
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  width: ${({ w }) => (w ? w : "156px")};
+  width: ${({ w }) => (w ? w : "100%")};
   height: ${({ h }) => (h ? h : "120px")};
   gap: ${({ gap }) => (gap ? gap : "12px")};
   border-radius: 8px;

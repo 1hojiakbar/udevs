@@ -1,3 +1,4 @@
+import { useMediaQuery } from "@mui/material";
 import Card from "../Card/Card";
 import {
   BackgroundCover,
@@ -25,6 +26,7 @@ const Section = ({
   subCardTitle,
   textWidth,
 }) => {
+  const small = useMediaQuery("(max-width: 900px)");
   return (
     <Container>
       <ContentWrapper>
@@ -38,6 +40,11 @@ const Section = ({
               alignContent: "flex-start",
             }}
           >
+            {small && (
+              <LeftImageWrapper>
+                <LeftImage src={imgSrc} />
+              </LeftImageWrapper>
+            )}
             <GenericText type="medium" w={textWidth}>
               {text}
             </GenericText>
@@ -59,9 +66,11 @@ const Section = ({
               </SubCardWrapper>
             </SubCardSection>
           </div>
-          <LeftImageWrapper>
-            <LeftImage src={imgSrc} />
-          </LeftImageWrapper>
+          {!small && (
+            <LeftImageWrapper>
+              <LeftImage src={imgSrc} />
+            </LeftImageWrapper>
+          )}
         </BoxWrapper>
       </ContentWrapper>
     </Container>

@@ -17,12 +17,23 @@ export const ContentWrapper = styled.div`
   justify-content: space-between;
   width: 90%;
   margin-top: 72px;
+  @media (max-width: 1160px) {
+    width: 96%;
+    margin-top: 45px;
+    /* border: 1px solid red; */
+  }
 `;
 
 export const LogoImage = styled.img`
   width: 237px;
   height: 79px;
   margin-bottom: 14px;
+  @media (max-width: 1160px) {
+    width: 200px;
+    height: 79px;
+    margin: 0;
+    /* border: 1px solid red; */
+  }
 `;
 
 export const LeftContent = styled(Flex)`
@@ -32,6 +43,13 @@ export const LeftContent = styled(Flex)`
   align-items: flex-start;
   row-gap: 20px;
   margin-top: 110px;
+  @media (max-width: 1160px) {
+    margin-top: 20px;
+  }
+  @media (max-width: 900px) {
+    width: 100%;
+    align-items: center;
+  }
 `;
 
 export const RightContent = styled(Space)``;
@@ -42,6 +60,11 @@ export const HomeTitle = styled.h1`
   line-height: 24px;
   color: var(--secondary);
   margin-bottom: 20px;
+  @media (max-width: 1160px) {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 0;
+  }
 `;
 
 export const SubTitle = styled.h1`
@@ -50,9 +73,18 @@ export const SubTitle = styled.h1`
   line-height: 44px;
   color: var(--primary);
   margin-bottom: 20px;
+  @media (max-width: 1160px) {
+    font-size: 32px;
+    line-height: 30px;
+  }
 `;
 
 export const LeftImage = styled.img`
   width: 547px;
   height: 414px;
+  @media (max-width: 1160px) {
+    width: 450px;
+    height: 400px;
+    /* border: 1px solid red; */
+  }
 `;

@@ -16,21 +16,30 @@ import {
 import deleverCardData from "../../utils/delever";
 import GenericCard from "../../components/Generic/Card/Card";
 import { Element } from "react-scroll";
+import { useMediaQuery } from "@mui/material";
 
 const Delever = () => {
+  const small = useMediaQuery("(max-width: 900px)");
   return (
     <Element name="delever">
       <Container>
         <ContentWrapper>
-          <LeftBox>
-            <LeftImage src={image} />
-          </LeftBox>
+          {!small && (
+            <LeftBox>
+              <LeftImage src={image} />
+            </LeftBox>
+          )}
           <RightBox>
             <LeftBrandLogo src={titleImg} alt="image not found" />
             <Message>
               <Message.Icon src={truckIcon} />
               <Message.Title>Delivery</Message.Title>
             </Message>
+            {small && (
+              <LeftBox>
+                <LeftImage src={image} />
+              </LeftBox>
+            )}
             <RightBoxCenterText>
               Delever - Delivery service automation targeted at both consumers
               and restaurants.

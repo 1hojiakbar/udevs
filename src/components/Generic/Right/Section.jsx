@@ -1,3 +1,4 @@
+import { useMediaQuery } from "@mui/material";
 import Card from "../Card/Card";
 import { CardWrapper, GenericText, GenericTitle } from "../Left/style";
 import {
@@ -11,17 +12,27 @@ import {
 } from "./style";
 
 const Section = ({ title, text, imgSrc, card }) => {
+  const small = useMediaQuery("(max-width: 900px)");
   return (
     <Container>
       <ContentWrapper>
         <GenericTitle>{title}</GenericTitle>
         <BoxWrapper>
-          <LeftImageWrapper>
-            <BackgroundCover>
-              <LeftImage src={imgSrc} />
-            </BackgroundCover>
-          </LeftImageWrapper>
+          {!small && (
+            <LeftImageWrapper>
+              <BackgroundCover>
+                <LeftImage src={imgSrc} />
+              </BackgroundCover>
+            </LeftImageWrapper>
+          )}
           <RightContent>
+            {small && (
+              <LeftImageWrapper>
+                <BackgroundCover>
+                  <LeftImage src={imgSrc} />
+                </BackgroundCover>
+              </LeftImageWrapper>
+            )}
             <GenericText>{text}</GenericText>
             <CardWrapper>
               {card?.map((item) => {

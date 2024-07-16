@@ -23,4 +23,7 @@ export const CardWrapper = styled.div`
   gap: 30px;
   margin-right: auto;
   width: 100%;
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr 1fr;
+  }
 `;

@@ -1,17 +1,16 @@
-import { useEffect, useState } from "react";
+import { useMediaQuery } from "@mui/material";
 import Card from "../Card/Card";
 import {
   BackgroundCover,
   BoxWrapper,
-  ContentWrapper,
-  LeftImage,
-  LeftImageWrapper,
-} from "../Right/style";
-import {
   CardWrapper,
   Container,
+  ContentWrapper,
   GenericText,
   GenericTitle,
+  LeftContentWrapper,
+  RightImage,
+  RightImageWrapper,
   SubCardSection,
   SubCardTitle,
   SubCardWrapper,
@@ -26,19 +25,20 @@ const Section = ({
   subCardTitle,
   textWidth,
 }) => {
+  const small = useMediaQuery("(max-width: 900px)");
   return (
     <Container>
       <ContentWrapper>
         <GenericTitle>{title}</GenericTitle>
         <BoxWrapper>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              height: "max-content",
-              alignContent: "flex-start",
-            }}
-          >
+          <LeftContentWrapper>
+            {small && (
+              <RightImageWrapper>
+                <BackgroundCover>
+                  <RightImage src={imgSrc} />
+                </BackgroundCover>
+              </RightImageWrapper>
+            )}
             <GenericText type="medium" w={textWidth}>
               {text}
             </GenericText>
@@ -59,12 +59,14 @@ const Section = ({
                   })}
               </SubCardWrapper>
             </SubCardSection>
-          </div>
-          <LeftImageWrapper>
-            <BackgroundCover>
-              <LeftImage src={imgSrc} />
-            </BackgroundCover>
-          </LeftImageWrapper>
+          </LeftContentWrapper>
+          {!small && (
+            <RightImageWrapper>
+              <BackgroundCover>
+                <RightImage src={imgSrc} />
+              </BackgroundCover>
+            </RightImageWrapper>
+          )}
         </BoxWrapper>
       </ContentWrapper>
     </Container>

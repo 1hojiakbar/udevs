@@ -20,4 +20,7 @@ export const GenericTitle = styled.h1`
   padding-bottom: ${({ pb }) => (pb ? pb : "0")};
   min-width: ${({ minw }) => (minw ? minw : "0")};
   max-width: ${({ maxw }) => (maxw ? maxw : "0")};
+  @media (max-width: 900px) {
+    font-size: 32px;
+  }
 `;

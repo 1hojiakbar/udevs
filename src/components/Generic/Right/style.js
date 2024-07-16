@@ -8,11 +8,16 @@ export const Container = styled.div`
   justify-content: center;
   background: var(--bgCard);
 `;
+
 export const ContentWrapper = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
   width: 90%;
+  @media (max-width: 1160px) {
+    width: 98%;
+    border: 1px solid red;
+  }
 `;
 
 export const BoxWrapper = styled.div`
@@ -21,12 +26,33 @@ export const BoxWrapper = styled.div`
   justify-content: space-between;
   width: 100%;
   gap: 45px;
+  @media (max-width: 1160px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    justify-content: flex-start;
+  }
 `;
 
 export const LeftImageWrapper = styled.div`
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
+  align-items: center;
   width: 43%;
+  object-fit: cover;
+  @media (max-width: 1160px) {
+    display: flex;
+    justify-content: flex-end;
+    width: 450px;
+    border: 1px solid red;
+  }
+  @media (max-width: 900px) {
+    width: 500px;
+    height: 296px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 20px;
+  }
 `;
 
 export const BackgroundCover = styled.div`
@@ -41,12 +67,34 @@ export const BackgroundCover = styled.div`
   background-size: cover;
   background-attachment: fixed;
   background-image: url(${backgroundImage});
+  @media (max-width: 1160px) {
+    width: 100%;
+    height: 500px;
+    /* border: 1px solid yellow; */
+  }
+  @media (max-width: 900px) {
+    width: 500px;
+    height: 296px;
+    border-radius: 20px;
+  }
 `;
 
 export const LeftImage = styled.img`
   width: 89%;
+  @media (max-width: 1160px) {
+    width: 100%;
+  }
+  @media (max-width: 900px) {
+    width: 500px;
+    height: 296px;
+    border-radius: 20px;
+  }
 `;
 
 export const RightContent = styled.div`
   width: 47%;
+  @media (max-width: 1160px) {
+    width: 100%;
+    border: 2px solid teal;
+  }
 `;

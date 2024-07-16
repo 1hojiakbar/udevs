@@ -60,6 +60,9 @@ export const TeamText = styled.div`
   font-weight: 500;
   margin-bottom: 26px;
   color: var(--secondary);
+  @media (max-width: 900px) {
+    font-size: 16px;
+  }
 `;
 
 export const CountTitle = styled.h5`
@@ -67,4 +70,7 @@ export const CountTitle = styled.h5`
   line-height: 72px;
   font-weight: 800;
   color: var(--secondary);
+  @media (max-width: 900px) {
+    font-size: 24px;
+  }
 `;

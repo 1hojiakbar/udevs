@@ -46,7 +46,6 @@ AddressItem.Title = styled.a``;
 
 export const ContactWrapper = styled.div`
   display: grid;
-  border: 1px solid red;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
   width: 100%;

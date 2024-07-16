@@ -16,7 +16,6 @@ export const ContentWrapper = styled.div`
   width: 90%;
   @media (max-width: 1160px) {
     width: 98%;
-    border: 1px solid red;
   }
 `;
 
@@ -44,7 +43,6 @@ export const LeftImageWrapper = styled.div`
     display: flex;
     justify-content: flex-end;
     width: 450px;
-    border: 1px solid red;
   }
   @media (max-width: 900px) {
     width: 500px;
@@ -70,7 +68,6 @@ export const BackgroundCover = styled.div`
   @media (max-width: 1160px) {
     width: 100%;
     height: 500px;
-    /* border: 1px solid yellow; */
   }
   @media (max-width: 900px) {
     width: 500px;
@@ -95,6 +92,13 @@ export const RightContent = styled.div`
   width: 47%;
   @media (max-width: 1160px) {
     width: 100%;
-    border: 2px solid teal;
+  }
+  @media (max-width: 900px) {
+    width: 500px;
+    height: 470px;
+  }
+  @media (max-width: 800px) {
+    width: 400px;
+    height: 470px;
   }
 `;

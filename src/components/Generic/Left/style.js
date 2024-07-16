@@ -44,10 +44,10 @@ export const ContentWrapper = styled.div`
   justify-content: center;
   flex-direction: column;
   width: 90%;
-  border: 1px solid red;
+  
   @media (max-width: 1160px) {
     width: 98%;
-    /* border: 1px solid blue; */
+  
   }
 `;
 
@@ -115,7 +115,6 @@ export const GenericText = styled.p`
   @media (max-width: 900px) {
     font-size: 16px;
     line-height: 30px;
-    border: 1px solid red;
     width: 500px;
   }
 `;
@@ -145,7 +144,6 @@ export const SubCardWrapper = styled.div`
     justify-content: flex-start;
     grid-template-columns: 100px 100px 100px 100px;
     gap: 10px;
-    border: 1px solid black;
   }
   @media (max-width: 900px) {
     width: 500px;
@@ -166,6 +164,10 @@ export const RightImageWrapper = styled.div`
   @media (max-width: 900px) {
     width: 500px;
     height: 472px;
+  }
+  @media (max-width: 800px) {
+    width: 400px;
+    height: 470px;
   }
 `;
 
@@ -189,6 +191,10 @@ export const BackgroundCover = styled.div`
     width: 500px;
     height: 470px;
   }
+  @media (max-width: 800px) {
+    width: 400px;
+    height: 470px;
+  }
 `;
 
 export const RightImage = styled.img`
@@ -196,4 +202,13 @@ export const RightImage = styled.img`
   @media (max-width: 1160px) {
     width: 100%;
   }
+  @media (max-width: 900px) {
+    width: 500px;
+    height: 470px;
+  }
+  @media (max-width: 800px) {
+    width: 400px;
+    height: 470px;
+  }
+
 `;

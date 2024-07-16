@@ -15,20 +15,29 @@ import {
 } from "./style";
 import deleverCardData from "../../utils/delever";
 import GenericCard from "../../components/Generic/Card/Card";
+import { useMediaQuery } from "@mui/material";
 
 const Goodzone = () => {
+  const small = useMediaQuery("(max-width: 900px)");
   return (
     <Container>
       <ContentWrapper>
-        <LeftBox>
-          <LeftImage src={image} />
-        </LeftBox>
+        {!small && (
+          <LeftBox>
+            <LeftImage src={image} />
+          </LeftBox>
+        )}
         <RightBox>
           <LeftBrandLogo src={titleImg} alt="image not found" />
           <Message>
             <Message.Icon src={truckIcon} />
             <Message.Title>E-Commerce</Message.Title>
           </Message>
+          {small && (
+            <LeftBox>
+              <LeftImage src={image} />
+            </LeftBox>
+          )}
           <RightBoxCenterText style={{ margin: "10px 0" }}>
             Goodzone - Internet shop of household appliances in Uzbekistan.
           </RightBoxCenterText>

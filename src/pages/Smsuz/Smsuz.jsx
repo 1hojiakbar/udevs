@@ -15,8 +15,10 @@ import {
 } from "./style";
 import GenericCard from "../../components/Generic/Card/Card";
 import smsuzCardData from "../../utils/smsuz";
+import { useMediaQuery } from "@mui/material";
 
 const Smsuz = () => {
+  const small = useMediaQuery("(max-width: 900px)");
   return (
     <Container>
       <ContentWrapper>
@@ -26,6 +28,11 @@ const Smsuz = () => {
             <Message.Icon src={truckIcon} />
             <Message.Title>Notfication</Message.Title>
           </Message>
+          {small && (
+            <LeftBox>
+              <LeftImage src={image} />
+            </LeftBox>
+          )}
           <RightBoxCenterText>
             Smsuz.uz - It is a platform for bulk SMS messaging.
           </RightBoxCenterText>
@@ -42,9 +49,11 @@ const Smsuz = () => {
             })}
           </CardWrapper>
         </RightBox>
-        <LeftBox>
-          <LeftImage src={image} />
-        </LeftBox>
+        {!small && (
+          <LeftBox>
+            <LeftImage src={image} />
+          </LeftBox>
+        )}
       </ContentWrapper>
     </Container>
   );

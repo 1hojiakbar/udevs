@@ -44,10 +44,16 @@ Message.Title = styled.strong`
 
 export const LeftBox = styled.div`
   width: 50%;
+  @media (max-width: 900px) {
+    width: 100%;
+  }
 `;
 
 export const RightBox = styled.div`
   width: 50%;
+  @media (max-width: 900px) {
+    width: 100%;
+  }
 `;
 
 export const RightBoxText = styled.div`
@@ -64,6 +70,9 @@ export const RightBoxCenterText = styled.div`
   font-weight: 600;
   margin: 10px 0;
   color: var(--secondary);
+  @media (max-width: 900px) {
+    font-size: 16px;
+  }
 `;
 
 export const CardWrapper = styled.div`
@@ -71,4 +80,15 @@ export const CardWrapper = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   width: 80%;
   gap: 20px;
+  @media (max-width: 1160px) {
+    width: 100%;
+    grid-template-columns: 170px 170px;
+  }
+  @media (max-width: 1060px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @media (max-width: 800px) {
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
 `;

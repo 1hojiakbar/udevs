@@ -21,7 +21,13 @@ export const FooterLinkWrapper = styled.div`
   justify-content: space-between;
   width: 90%;
   margin: 44px 0 32px 0;
+  border: 1px solid red;
+  @media (max-width: 900px) {
+    flex-direction: column;
+    gap: 1rem;
+  }
 `;
+
 export const FooterLinksItem = styled.div`
   display: flex;
   flex-direction: column;

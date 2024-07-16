@@ -46,6 +46,7 @@ AddressItem.Title = styled.a``;
 
 export const ContactWrapper = styled.div`
   display: grid;
+  border: 1px solid red;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
   width: 100%;
@@ -54,6 +55,10 @@ export const ContactWrapper = styled.div`
   border-radius: 10px;
   box-shadow: 2px 10px 28px rgba(75, 0, 129, 0.12);
   background-color: #fff;
+  @media (max-width: 900px) {
+    padding: 40px 20px 40px 20px;
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const ContactInput = styled(Input)`

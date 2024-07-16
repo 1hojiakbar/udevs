@@ -14,8 +14,10 @@ import {
   SubTitle,
 } from "./style";
 import { Link } from "react-scroll";
+import { useBreakpoint } from "../../context/BreakpointContext";
 
 const Home = () => {
+  const breakpoint = useBreakpoint();
   const typedTextRef = useRef(null);
 
   useEffect(() => {
@@ -57,6 +59,21 @@ const Home = () => {
               Contact
             </Link>
           </Button>
+          <div>
+            <h1>Current Breakpoint: {breakpoint}</h1>
+            {/* Breakpoint bo'yicha tegishli kontent */}
+            {breakpoint === "1400px" && (
+              <div>1400px va undan katta ekranlar</div>
+            )}
+            {breakpoint === "1200px" && (
+              <div>1200px va undan katta ekranlar</div>
+            )}
+            {breakpoint === "992px" && <div>992px va undan katta ekranlar</div>}
+            {breakpoint === "800px" && <div>800px va undan katta ekranlar</div>}
+            {breakpoint === "768px" && <div>768px va undan katta ekranlar</div>}
+            {breakpoint === "567px" && <div>567px va undan katta ekranlar</div>}
+            {breakpoint === "375px" && <div>375px va undan katta ekranlar</div>}
+          </div>
         </LeftContent>
         <RightContent>
           <LeftImage src={homeImage} alt="Image not found" />

@@ -22,6 +22,8 @@ const navbar = [
     label: "Services",
     path: "/services",
     element: "dropdown",
+    width: 325,
+    height: 171,
     children: [
       {
         id: "1-1",
@@ -72,6 +74,8 @@ const navbar = [
     type: "group",
     label: "Portifolio",
     path: "/Portifolio",
+    width: 145,
+    height: 140,
     element: "dropdown",
     children: [
       {
@@ -86,7 +90,7 @@ const navbar = [
       },
       {
         id: "1-3",
-        label: "goodzone",
+        label: "Goodzone",
         path: "/goodzone",
       },
       {
@@ -100,6 +104,8 @@ const navbar = [
     id: 7,
     type: "group",
     label: "Language",
+    width: 115,
+    height: 75,
     element: "dropdown",
     children: [
       {

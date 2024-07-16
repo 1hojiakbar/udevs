@@ -5,6 +5,7 @@ import { useState } from "react";
 import { ContactInput } from "../pages/Contact/style";
 import { TitleWrapper } from "../pages/Clients/style";
 import { Element } from "react-scroll";
+import { BreakpointProvider } from "../context/BreakpointContext";
 
 const App = () => {
   const [open, setOpen] = useState(false);
@@ -15,7 +16,7 @@ const App = () => {
     setOpen(false);
   };
   return (
-    <>
+    <BreakpointProvider>
       {pages.map(({ id, element: Section, path }) => {
         return (
           <Element name={path} key={id}>
@@ -38,7 +39,7 @@ const App = () => {
         <TitleWrapper style={{ margin: "12px 0" }}>Welcome</TitleWrapper>
         <ContactInput placeholder="Введите сообщение…" />
       </Drawer>
-    </>
+    </BreakpointProvider>
   );
 };
 

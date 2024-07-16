@@ -64,6 +64,9 @@ const Section = styled.div`
   ${flex}
   align-items: center;
   gap: ${({ gap }) => gap && gap};
+  .option {
+    width: 270px;
+  }
 `;
 
 const NavLinkItem = styled(Link)`
@@ -88,7 +91,7 @@ const NavLinkItem = styled(Link)`
     border-top-right-radius: 2px;
     border-top-left-radius: 2px;
     transform: rotate(180deg);
-    padding-left: 1.3px;
+    padding-left: 0.9px;
     padding-top: 7px;
     width: 100%;
     opacity: 0;

@@ -10,6 +10,7 @@ const UI = () => {
         title="UI / UX design"
         text={uiPageText}
         textWidth={"450px"}
+        margin="200px 0 0 0"
         imgSrc={uxImage}
         card={uiCardData}
         type="small"

@@ -24,10 +24,11 @@ const Section = ({
   subCard,
   subCardTitle,
   textWidth,
+  margin,
 }) => {
   const small = useMediaQuery("(max-width: 900px)");
   return (
-    <Container>
+    <Container m={margin}>
       <ContentWrapper>
         <GenericTitle>{title}</GenericTitle>
         <BoxWrapper>

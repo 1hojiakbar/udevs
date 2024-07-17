@@ -35,6 +35,15 @@ export const Container = styled.div`
   width: 100%;
   padding: 120px 0;
   height: max-content;
+  @media (max-width: 900px) { 
+    margin-top: 160px;
+  }
+  @media (max-width: 588px) {
+    margin-top: 220px;
+  }
+  @media (max-width: 588px) {
+    margin-top: 280px;
+  }
 `;
 
 export const CardWrapper = styled.div`
@@ -43,6 +52,15 @@ export const CardWrapper = styled.div`
   gap: 20px;
   width: 497px;
   margin: 20px 0 0 0;
+  @media (max-width: 800px) {
+    width: 100%;
+    grid-template-columns: 130px 130px 130px;
+    width: 100%;
+  }
+  @media (max-width: 576px) {
+    width: 100%;
+    grid-template-columns: 140px 140px;
+  }
 `;
 
 export const GenericTitle = styled.div`

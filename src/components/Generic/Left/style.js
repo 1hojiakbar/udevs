@@ -37,6 +37,9 @@ export const Container = styled.div`
   padding: 120px 0;
   height: max-content;
   background: var(--bgCard);
+  @media (max-width: 576px) {
+    margin: ${({ m }) => m && m};
+  }
 `;
 
 export const ContentWrapper = styled.div`
@@ -44,10 +47,9 @@ export const ContentWrapper = styled.div`
   justify-content: center;
   flex-direction: column;
   width: 90%;
-  
+
   @media (max-width: 1160px) {
     width: 98%;
-  
   }
 `;
 
@@ -90,6 +92,11 @@ export const CardWrapper = styled.div`
     grid-template-columns: 150px 150px 150px;
     width: 100%;
   }
+  @media (max-width: 576px) {
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
 `;
 
 export const GenericTitle = styled.div`
@@ -116,6 +123,9 @@ export const GenericText = styled.p`
     font-size: 16px;
     line-height: 30px;
     width: 500px;
+  }
+  @media (max-width: 576px) {
+    width: 480px;
   }
 `;
 
@@ -210,5 +220,4 @@ export const RightImage = styled.img`
     width: 400px;
     height: 470px;
   }
-
 `;

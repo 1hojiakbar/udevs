@@ -51,6 +51,9 @@ export const LeftImageWrapper = styled.div`
     overflow: hidden;
     border-radius: 20px;
   }
+  @media (max-width: 499px) {
+    width: 430px;
+  }
 `;
 
 export const BackgroundCover = styled.div`
@@ -74,6 +77,9 @@ export const BackgroundCover = styled.div`
     height: 296px;
     border-radius: 20px;
   }
+  @media (max-width: 499px) {
+    width: 430px;
+  }
 `;
 
 export const LeftImage = styled.img`
@@ -85,6 +91,9 @@ export const LeftImage = styled.img`
     width: 500px;
     height: 296px;
     border-radius: 20px;
+  }
+  @media (max-width: 499px) {
+    width: 430px;
   }
 `;
 

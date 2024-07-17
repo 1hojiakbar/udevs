@@ -26,4 +26,9 @@ export const CardWrapper = styled.div`
   @media (max-width: 900px) {
     grid-template-columns: 1fr 1fr;
   }
+  @media (max-width: 499px) {
+    width: 100%;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
 `;

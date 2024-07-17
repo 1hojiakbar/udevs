@@ -1,6 +1,6 @@
 import React from "react";
 import uxImage from "../../assets/images/ux-section.png";
-import uiCardData, { uiTechCardData, uiPageText } from "../../utils/ui-design";
+import uiCardData, { uiTechCardData, uiPageText } from "../../utils/ui.js";
 import Section from "../../components/Generic/Left/Section";
 
 const UI = () => {

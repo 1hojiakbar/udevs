@@ -10,7 +10,7 @@ import uiAtomicDesignIcon from "../assets/icons/ui-atomic-design.svg";
 import figmaIcon from "../assets/icons/figma.svg";
 import sketchIcon from "../assets/icons/sketch.svg";
 import lottieIcon from "../assets/icons/lottie.svg";
-import illustratorIcon from "../assets/icons/illustrator.svg";
+import illustratorIcon from "../assets/icons/adobe.svg";
 
 const uiCardData = [
   {

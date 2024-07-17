@@ -43,7 +43,7 @@ import cassandraIcon from "../assets/icons/cassandra.svg";
 import sassIcon from "../assets/icons/sass.svg";
 import materialIcon from "../assets/icons/material-ui.svg";
 import zeplinIcon from "../assets/icons/zeplin.svg";
-import illustratorIcon from "../assets/icons/illustrator.svg";
+import illustratorIcon from "../assets/icons/adobe.svg";
 import lottieIcon from "../assets/icons/lottie-icon.svg";
 import photoshopIcon from "../assets/icons/photoshop.svg";
 
